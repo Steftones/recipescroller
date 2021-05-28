@@ -1,7 +1,7 @@
 # Recipe Scroller
 Scroll past the nonsense on recipe pages, e.g. pointless explanations, SEO writing and more.
 
-##Installation instructions
+## Installation instructions
 
 <ul>
 <li> Clone this repo to your computer OR go to 'Code' > 'Download Zip' and unzip the folder.
