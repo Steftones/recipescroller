@@ -1,5 +1,5 @@
 // get all nodes on a page
-const allNodes: any = document.querySelectorAll('*')
+const allNodes: HTMLElement[] = Array.from(document.querySelectorAll('*'))
 
 // get 'Time:' first - most likely thing to indicate the start
 const timeNodes = []
@@ -10,7 +10,7 @@ for (let i = 0; i < allNodes.length; i++){
 }
 
 // get titles that have 'ingredient' in them
-let scrollNodes: any[] = []
+let scrollNodes: HTMLElement[] = []
 const elementsToSearch = ['H1', 'H2', 'H3', 'H4', 'H5', 'H6']
 for (let i = 0; i < allNodes.length; i++){
   if (elementsToSearch.includes(allNodes[i].nodeName) && allNodes[i].innerText.toLowerCase().includes('ingredient')){

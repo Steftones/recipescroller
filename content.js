@@ -4,7 +4,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from) {
     return to;
 };
 // get all nodes on a page
-var allNodes = document.querySelectorAll('*');
+var allNodes = Array.from(document.querySelectorAll('*'));
 // get 'Time:' first - most likely thing to indicate the start
 var timeNodes = [];
 for (var i = 0; i < allNodes.length; i++) {
