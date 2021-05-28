@@ -1,0 +1,28 @@
+{
+  "name": "Recipe Scroller ",
+  "description": "Scroll past the nonsense on a recipe page",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/obj-16x16.png",
+      "32": "/images/obj-32x32.png",
+      "48": "/images/obj-48x48.png",
+      "128": "/images/obj-128x128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/obj-16x16.png",
+    "32": "/images/obj-32x32.png",
+    "48": "/images/obj-48x48.png",
+    "128": "/images/obj-128x128.png"
+  }
+}
